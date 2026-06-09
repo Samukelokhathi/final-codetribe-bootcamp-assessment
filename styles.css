@@ -64,3 +64,8 @@ body {
     color: hsl(234, 29%, 20%);
     line-height: 1.5;
 }
+
+.check-icon {
+    width: 21px;
+    height: 21px;
+}
