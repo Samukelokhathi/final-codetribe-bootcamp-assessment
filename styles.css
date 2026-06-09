@@ -99,3 +99,20 @@ body {
     font-size: 12px;
     color: hsl(4, 100%, 67%);
 }
+
+#submit-btn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: hsl(4, 100%, 67%);
+}

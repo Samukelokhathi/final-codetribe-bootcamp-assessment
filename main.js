@@ -22,7 +22,7 @@ function FeedBack() {
 function validateEmail() {
     let regExpr = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (email.value.trim() == "") {
+    if (email.value.trim() === "") {
         emailError.textContent = "Email input is empty"
     }
 
