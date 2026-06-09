@@ -1,38 +1,28 @@
 
-const userInput = document.getElementById("email-input")
+const email = document.getElementById("email-input")
 const submitBtn = document.getElementById("submit-btn");
-const formElement = document.getElementById("Newsletter-signup-form");
+const subscirbeForm = document.getElementById("subscribe-form");
+const emailError = document.getElementsByClassName("email-error")
 
 
-formElement.addEventListener("submit", (event) => {
+subscirbeForm.addEventListener("submit", (event) => {
     event.preventDefault()
 
-
-
-    // console.log(userInput)
-
-
-    clearInput()
+    validateEmail()
+    FeedBack()
 })
 
 
-function currentEmail() { return userInput.value.trim() }
+function FeedBack() {
+    alert(`${email.value.trim()} \n \n Thanks for subscribing!`)
+}
 
-// function validateEmail() {
-//     let regExpr = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+function validateEmail() {
+    let regExpr = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-//     if (!regExpr.test(email.value)) {
-//         emailError.textContent = "Enter a valid email format"
-//     }
-// }
-
-function clearInput() {
-    userInput.value = ""
+    if (!regExpr.test(email.value)) {
+        emailError.textContent = "Enter a valid email format"
+    }
 }
 
 
-
-function saveEmail() {
-    let latestEmail = []
-
-}
