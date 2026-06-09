@@ -1,1 +1,33 @@
-import
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Robot", sans-serif
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.card-container {
+    width: 100%;
+    max-width: 930px;
+}
+
+.card-section {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 32px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .25);
+
+}
