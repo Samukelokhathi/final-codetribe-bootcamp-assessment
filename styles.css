@@ -130,3 +130,18 @@ body {
 .mobile-image {
     display: none;
 }
+
+
+/* Yeyyyyyyyyyyyyyyyyyyyyyyyyyyy rensponsive kzoshuba😭😭😭 */
+
+@media(max-width:900px) {
+    .card-section {
+        gap: 20px
+    }
+
+    .card-content h1 {
+        font-size: 46px;
+    }
+
+
+}
