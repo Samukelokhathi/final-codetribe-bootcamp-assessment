@@ -2,7 +2,7 @@
 const email = document.getElementById("email-input")
 const submitBtn = document.getElementById("submit-btn");
 const subscirbeForm = document.getElementById("subscribe-form");
-const emailError = document.getElementsByClassName("email-error")
+const emailError = document.querySelector(".email-error")
 
 
 subscirbeForm.addEventListener("submit", (event) => {
@@ -10,6 +10,8 @@ subscirbeForm.addEventListener("submit", (event) => {
 
     validateEmail()
     FeedBack()
+
+
 })
 
 
@@ -18,11 +20,16 @@ function FeedBack() {
 }
 
 function validateEmail() {
-    let regExpr = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    let regExpr = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!regExpr.test(email.value)) {
+    if (email.value.trim() == "") {
+        emailError.textContent = "Email input is empty"
+    }
+
+    if (!regExpr.test(email.value.trim())) {
         emailError.textContent = "Enter a valid email format"
     }
+    console.log("Validated ")
 }
 
 
