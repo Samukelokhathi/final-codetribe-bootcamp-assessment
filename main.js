@@ -9,7 +9,7 @@ subscirbeForm.addEventListener("submit", (event) => {
     event.preventDefault()
 
     validateEmail()
-    FeedBack()
+
 
 
 })
@@ -17,6 +17,7 @@ subscirbeForm.addEventListener("submit", (event) => {
 
 function FeedBack() {
     alert(`${email.value.trim()} \n \n Thanks for subscribing!`)
+
 }
 
 function validateEmail() {
@@ -30,6 +31,7 @@ function validateEmail() {
         emailError.textContent = "Enter a valid email format"
     }
     console.log("Validated ")
+    FeedBack()
 }
 
 

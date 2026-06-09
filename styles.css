@@ -116,3 +116,17 @@ body {
 #submit-btn:hover {
     background-color: hsl(4, 100%, 67%);
 }
+
+.images {
+    flex: 1;
+}
+
+.desktop-image {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+}
+
+.mobile-image {
+    display: none;
+}
