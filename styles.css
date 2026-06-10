@@ -223,4 +223,10 @@ body {
     .card-content ul li {
         font-size: 0.95rem;
     }
+
+    #email-input,
+    #submit-btn {
+        padding: 1rem;
+        font-size: 0.7rem;
+    }
 }
