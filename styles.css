@@ -207,5 +207,20 @@ body {
         font-size: 0.9rem;
     }
 
+}
 
+@media(max-width: 380px) {
+    .card-content {
+        padding: 2rem 1.5rem;
+        width: 100%;
+    }
+
+    .card-content-h1 {
+        font-size: 1.2rem;
+    }
+
+    .card-content p,
+    .card-content ul li {
+        font-size: 0.95rem;
+    }
 }
