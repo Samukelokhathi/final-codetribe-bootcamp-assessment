@@ -201,5 +201,11 @@ body {
         line-height: 1.5;
     }
 
+    #email-input,
+    #submit-btn {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
 
 }
