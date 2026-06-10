@@ -161,7 +161,7 @@ body {
     .card-section {
         flex-direction: column-reverse;
         border-radius: 10;
-        padding: 10px;
+        padding: 20px;
         min-height: 80vh;
         gap: 0;
     }
@@ -170,9 +170,36 @@ body {
         width: 100%;
     }
 
+    .desktop-image {
+        display: none;
+    }
+
     .mobile-image {
         display: block;
-        width: 100% auto;
+        width: 100%;
+        height: auto;
     }
+
+    .card-content {
+        width: 100%;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .card-content h1 {
+        font-size: 2.5rem;
+        line-height: 1;
+        margin-bottom: 1.5rem;
+    }
+
+    .card-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .card-content ul li {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
 
 }
