@@ -8,30 +8,33 @@ const emailError = document.querySelector(".email-error")
 subscirbeForm.addEventListener("submit", (event) => {
     event.preventDefault()
 
+    if (email.value.trim() === "") {
+        emailError.textContent = "Email input is empty"
+        return
+    }
+
     validateEmail()
-
-
 
 })
 
 
-function FeedBack() {
+function feedBack() {
     alert(`${email.value.trim()} \n \n Thanks for subscribing!`)
-
+    email.value = ""
 }
 
 function validateEmail() {
+    emailError.textContent = ""
     let regExpr = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (email.value.trim() === "") {
-        emailError.textContent = "Email input is empty"
-    }
 
     if (!regExpr.test(email.value.trim())) {
         emailError.textContent = "Enter a valid email format"
+        return
+    } else {
+        emailError.textContent = ""
+        feedBack()
     }
-    console.log("Validated ")
-    FeedBack()
+
 }
 
 
